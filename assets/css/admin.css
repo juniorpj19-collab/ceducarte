@@ -1,0 +1,100 @@
+
+.cedu-admin .cedu-tabs{ margin-top:14px; }
+.cedu-admin .cedu-tabbar{
+  display:flex; gap:8px; flex-wrap:wrap;
+  position: sticky; top: 32px; z-index: 10;
+  background: #f6f7fb; padding: 10px 0;
+}
+.cedu-admin .cedu-tab{
+  border: 1px solid #d5d7e0;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor:pointer;
+  font-weight: 700;
+}
+.cedu-admin .cedu-tab.is-active{
+  border-color: #2271b1;
+  box-shadow: 0 6px 16px rgba(34,113,177,.15);
+}
+.cedu-admin .cedu-panel{ display:none; }
+.cedu-admin .cedu-panel.is-active{ display:block; }
+.cedu-admin .cedu-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+}
+@media (max-width: 1100px){
+  .cedu-admin .cedu-grid{ grid-template-columns: 1fr; }
+}
+.cedu-admin .cedu-card{
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.05);
+}
+.cedu-admin .cedu-subcard{
+  background: #fbfbfd;
+  border: 1px solid #e3e4ea;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+}
+.cedu-admin .cedu-field{ display:block; margin-bottom: 12px; }
+.cedu-admin .cedu-field > span{ display:block; font-weight: 700; margin-bottom: 6px; }
+.cedu-admin .cedu-field.inline{ display:flex; gap:10px; align-items:center; }
+.cedu-admin input[type="text"], .cedu-admin textarea{
+  width:100%;
+  border-radius: 10px;
+}
+.cedu-admin .cedu-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 900px){
+  .cedu-admin .cedu-row{ grid-template-columns: 1fr; }
+}
+.cedu-media{ display:flex; gap:12px; align-items:center; }
+.cedu-media-preview{
+  width: 86px; height: 66px;
+  border-radius: 12px;
+  border: 1px dashed #c3c4c7;
+  display:grid; place-items:center;
+  overflow:hidden;
+  background: #f6f7fb;
+}
+.cedu-media-preview img{ width:100%; height:100%; object-fit:cover; }
+.cedu-media-actions{ display:flex; gap:10px; align-items:center; }
+.cedu-note{
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-left: 4px solid #2271b1;
+  background: #f0f6ff;
+  border-radius: 10px;
+}
+.cedu-accordion .cedu-acc{
+  border: 1px solid #e3e4ea;
+  border-radius: 12px;
+  overflow:hidden;
+  margin: 10px 0;
+}
+.cedu-acc-head{
+  width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 10px 12px;
+  background: #fbfbfd;
+  border:0;
+  cursor:pointer;
+  font-weight: 800;
+}
+.cedu-acc-body{ display:none; padding: 12px; background:#fff; }
+.cedu-acc.open .cedu-acc-body{ display:block; }
+.cedu-help{
+  margin-top: 12px;
+  padding: 10px 12px;
+  background:#fff;
+  border: 1px solid #dcdcde;
+  border-radius: 12px;
+}
